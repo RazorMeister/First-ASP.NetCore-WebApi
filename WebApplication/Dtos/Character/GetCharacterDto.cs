@@ -1,6 +1,8 @@
-﻿namespace WebApplication.Models
+﻿using WebApplication.Models;
+
+namespace WebApplication.Dtos.Character
 {
-    public class Character
+    public class GetCharacterDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = "Frodo";

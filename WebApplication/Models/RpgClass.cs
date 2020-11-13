@@ -1,6 +1,6 @@
 ﻿namespace WebApplication.Models
 {
-    public enum RphClass
+    public enum RpgClass
     {
         Knight = 1,
         Mage = 2,
