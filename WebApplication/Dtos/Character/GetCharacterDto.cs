@@ -1,4 +1,7 @@
-﻿using WebApplication.Models;
+﻿using System.Collections.Generic;
+using WebApplication.Dtos.Skill;
+using WebApplication.Dtos.Weapon;
+using WebApplication.Models;
 
 namespace WebApplication.Dtos.Character
 {
@@ -11,5 +14,7 @@ namespace WebApplication.Dtos.Character
         public int Defence { get; set; } = 10;
         public int Intelligence { get; set; } = 10;
         public RpgClass Class { get; set; } = RpgClass.Knight;
+        public GetWeaponDto Weapon { get; set; }
+        public List<GetSkillDto> Skills { get; set; }
     }
 }
