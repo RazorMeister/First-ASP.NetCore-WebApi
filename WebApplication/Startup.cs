@@ -19,6 +19,7 @@ using Microsoft.IdentityModel.Tokens;
 using WebApplication.Data;
 using WebApplication.Services.CharacterService;
 using WebApplication.Services.CharacterSkillService;
+using WebApplication.Services.FightService;
 using WebApplication.Services.WeaponService;
 
 namespace WebApplication
@@ -45,6 +46,7 @@ namespace WebApplication
             services.AddScoped<IAuthRepository, AuthRepository>();
             services.AddScoped<IWeaponService, WeaponService>();
             services.AddScoped<ICharacterSkillService, CharacterSkillService>();
+            services.AddScoped<IFightService, FightService>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
