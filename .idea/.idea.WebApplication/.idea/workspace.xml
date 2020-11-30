@@ -23,23 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="131f89f7-d88a-4a11-a5fa-ea9f2f7591b5" name="Default Changelist" comment="Add services and Dto support">
-      <change afterPath="$PROJECT_DIR$/WebApplication/Controllers/FightController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/AttackResultDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/FightRequestDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/FightResultDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/HighScoreDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/SkillAttackDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Dtos/Fight/WeaponAttackDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Services/FightService/FightService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplication/Services/FightService/IFightService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplication/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/AutoMapperProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/AutoMapperProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Data/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Data/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Dtos/Character/GetCharacterDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Dtos/Character/GetCharacterDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/Character.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Models/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplication/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Controllers/CharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Controllers/CharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Data/AuthRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Data/AuthRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplication/Services/CharacterService/CharacterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplication/Services/CharacterService/CharacterService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,8 +58,6 @@
         <option value="$PROJECT_DIR$/WebApplication/Dtos/User/UserLoginDto.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/AuthController.cs" />
         <option value="$PROJECT_DIR$/WebApplication/appsettings.json" />
-        <option value="$PROJECT_DIR$/WebApplication/Data/AuthRepository.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Controllers/CharacterController.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Services/CharacterService/ICharacterService.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Models/Weapon.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Dtos/Weapon/AddWeaponDto.cs" />
@@ -88,7 +73,6 @@
         <option value="$PROJECT_DIR$/WebApplication/Dtos/CharacterSkill/AddCharacterSkillDto.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Controllers/CharacterSkillController.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Services/CharacterSkillService/CharacterSkillService.cs" />
-        <option value="$PROJECT_DIR$/WebApplication/Services/CharacterService/CharacterService.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Models/Character.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Dtos/Character/GetCharacterDto.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Startup.cs" />
@@ -105,6 +89,9 @@
         <option value="$PROJECT_DIR$/WebApplication/Services/FightService/FightService.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Models/User.cs" />
         <option value="$PROJECT_DIR$/WebApplication/Data/DataContext.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Data/AuthRepository.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Controllers/CharacterController.cs" />
+        <option value="$PROJECT_DIR$/WebApplication/Services/CharacterService/CharacterService.cs" />
       </list>
     </option>
   </component>
@@ -172,7 +159,7 @@
       <workItem from="1605527293158" duration="3981000" />
       <workItem from="1606403008705" duration="3060000" />
       <workItem from="1606406368824" duration="38000" />
-      <workItem from="1606752140202" duration="5021000" />
+      <workItem from="1606752140202" duration="5814000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1605268656206</created>
@@ -216,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606406390506</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add fight system">
+      <created>1606757338438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606757338438</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +238,8 @@
     <MESSAGE value="Add services and Dto support" />
     <MESSAGE value="Make auth (JWT) and db connection with EF" />
     <MESSAGE value="Add characterSkills" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add characterSkills" />
+    <MESSAGE value="Add fight system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add fight system" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605270042857">
@@ -255,28 +250,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="823" y="418" key="Github.ShareDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605268872863" />
-    <state width="1877" height="120" key="GridCell.Tab.0.bottom" timestamp="1606756465422">
+    <state width="1877" height="120" key="GridCell.Tab.0.bottom" timestamp="1606757751331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="120" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606756465422" />
+    <state width="1877" height="120" key="GridCell.Tab.0.bottom/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606757751331" />
     <state width="1877" height="375" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605539629795" />
     <state width="1493" height="83" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1605379970855" />
-    <state width="1877" height="120" key="GridCell.Tab.0.center" timestamp="1606756465422">
+    <state width="1877" height="120" key="GridCell.Tab.0.center" timestamp="1606757751330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="120" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606756465422" />
+    <state width="1877" height="120" key="GridCell.Tab.0.center/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606757751330" />
     <state width="1877" height="375" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605539629794" />
     <state width="1493" height="83" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1605379970855" />
-    <state width="1877" height="120" key="GridCell.Tab.0.left" timestamp="1606756465422">
+    <state width="1877" height="120" key="GridCell.Tab.0.left" timestamp="1606757751330">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="120" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606756465422" />
+    <state width="1877" height="120" key="GridCell.Tab.0.left/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606757751330" />
     <state width="1877" height="375" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605539629794" />
     <state width="1493" height="83" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1605379970855" />
-    <state width="1877" height="120" key="GridCell.Tab.0.right" timestamp="1606756465422">
+    <state width="1877" height="120" key="GridCell.Tab.0.right" timestamp="1606757751331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="120" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606756465422" />
+    <state width="1877" height="120" key="GridCell.Tab.0.right/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606757751331" />
     <state width="1877" height="375" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605539629794" />
     <state width="1493" height="83" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@1920.0.1536.824" timestamp="1605379970855" />
     <state width="1877" height="375" key="GridCell.Tab.1.bottom" timestamp="1605539629795">
@@ -357,10 +352,10 @@
     </state>
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606403198279" />
     <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605278998983" />
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606406394333">
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1606757340534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606406394333" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1536.832/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1606757340534" />
     <state x="552" y="240" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040/1920.0.1536.824@0.0.1920.1040" timestamp="1605468897761" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605268564504">
       <screen x="0" y="0" width="1920" height="1040" />
